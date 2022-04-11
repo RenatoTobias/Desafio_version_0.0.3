@@ -15,7 +15,9 @@
         </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/styles.css">
-        
+        <script type="text/javascript">
+            function verifica (){if(document.getElementById("username").value.length < 3){alert('Por favor, preencha o campo nome');document.getElementById("username").focus();return false}}
+            </script>
     </head>
     <body>
 
@@ -24,10 +26,10 @@
             <a href="/repo" class="btn btn-outline-primary">Determinado Repositorio</a>
             <a href="/repositorios" class="btn btn-outline-primary">Repositorios</a>
             
-            <form action="/repositorios" method="GET">
+            <form action="/repositorios" method="GET" onsubmit="return verifica()">
                     @csrf
                     Procurar Repositorios do Usuario
-                    <input type="text" name="username" id="input_user"/>
+                    <input type="text" id="username" name="username" id="input_user" placeholder="Nome"/>
                     <input type="submit" class="btn btn-outline-primary" value="Procurar"/>
             </form>
         
