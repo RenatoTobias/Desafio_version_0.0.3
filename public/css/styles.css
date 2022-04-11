@@ -1,0 +1,41 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+.mostrapesquisa {
+    width: 500px;
+    height: 500px;
+    border: solid 5px #FFF;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.vcpesquisou {
+    text-align: center;
+    background-color: rgb(9, 136, 37);
+    border: solid 2px rgb(3, 58, 32);
+}
+
+.fpesquisa {
+    text-align: center;
+    background-color: rgb(80, 71, 211);
+    border: solid 2px rgb(24, 3, 114);
+}
+
+.qntresuldatosencontrados {
+    text-align: center;
+}
+
+.app {
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #333;
+    border: solid 5px #000;
+}
